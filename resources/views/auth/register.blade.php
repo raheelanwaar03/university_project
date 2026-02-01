@@ -1,52 +1,43 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
+@extends('layout.app')
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+@section('content')
+    <section class="account-sec sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="text-center mb-5">
+                        <h2 class="sec-title line primary">Register Account</h2>
+                        <p>Please register first to access your account.</p>
+                    </div>
+                    <div class="account-form bg-mute rounded-4">
+                        <form action="{{ route('register') }}" method="POST">
+                            @csrf
+                            <div class="form-group half-form">
+                                <input type="text" name="username" placeholder="Username*" required>
+                            </div>
+                            <div class="form-group half-form">
+                                <input type="email" name="email" placeholder="Email*" required>
+                            </div>
+                            <div class="form-group half-form">
+                                <input type="password" name="password" placeholder="Password*" required>
+                            </div>
+                            <div class="form-group half-form">
+                                <input type="password" name="confirm_password" placeholder="Re-Enter Password*" required>
+                            </div>
+                            <div class="form-check mt-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    I agreed to the Terms and Conditions governing the use of Fuzio Terms
+                                </label>
+                            </div>
+                            <button class="btn btn-primary w-100 mt-5">Register</button>
+                        </form>
+                        <div class="login-message text-center mt-5">
+                            <p>Already a member? <a class="text-success" href="login.html"> Login Here </a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
-
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+    </section>
+@endsection
