@@ -20,7 +20,7 @@
                             </div>
                             <div class="d-flex justify-content-between my-4">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="flexCheckChecked">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Remember me
                                     </label>
@@ -30,7 +30,7 @@
                             <button class="btn btn-primary w-100 mt-4">Login</button>
                         </form>
                         <div class="login-message text-center mt-5">
-                            <p>Don’t have an account ? <a class="text-success" href="register.html"> Register Now </a> </p>
+                            <p>Don’t have an account ? <a class="text-success" href="{{ route('register') }}"> Register Now </a> </p>
                         </div>
                     </div>
                 </div>
