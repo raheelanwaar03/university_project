@@ -10,12 +10,8 @@
                         <p>Please log to access your account.</p>
                     </div>
                     <div class="account-form bg-mute rounded-4">
-                        <div class="d-sm-flex justify-content-between mb-4">
-                            <a href="#" class="btn fb-btn text-info">Login with Facebook</a>
-                            <a href="#" class="btn gl-btn text-info">Login with Google</a>
-                        </div>
-                        <h5 class="h2 text-center">OR</h5>
-                        <form action="#">
+                        <form action="{{ route('login') }}" method="POST">
+                            @csrf
                             <div class="form-group mb-3">
                                 <input type="text" placeholder="Username*" required>
                             </div>
