@@ -46,7 +46,7 @@
                 </button>
                 <div class="nav-cta order-lg-3">
                     <div class="d-flex align-items-center justify-content-between">
-                        <a href="login.html"><i class="feather-icon icon-user"></i></a>
+                        <a href="{{ route('login') }}"><i class="feather-icon icon-user"></i></a>
                     </div>
                 </div>
                 <div class="offcanvas offcanvas-start offcanvas-nav">
