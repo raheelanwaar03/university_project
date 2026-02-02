@@ -66,7 +66,7 @@
                                 <a href="#" role="button">Home</a>
                             </li>
                             <li class="nav-item"><a href="{{ route('Event') }}" class="nav-link">Events</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Matches</a></li>
+                            <li class="nav-item"><a href="{{ route('Matches') }}" class="nav-link">Matches</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
