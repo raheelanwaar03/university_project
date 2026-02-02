@@ -15,7 +15,7 @@ class status
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (auth()->user()->role == 'approved') {
+        if (auth()->user()->role == 'active') {
             return $next($request);
         } else {
             return redirect()->url('/')->with('error', 'Please wait for Admin approval');
