@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/admin//images/favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/logo/champions.png') }}">
 
 
     <!-- App css -->
@@ -91,14 +91,14 @@
     <div class="startbar d-print-none">
         <!--start brand-->
         <div class="brand">
-            <a href="index.html" class="logo">
+            <a href="{{ route('Admin.Dashboard') }}" class="logo">
                 <span>
-                    <img src="{{ asset('assets/admin//images/logo-sm.png') }}" alt="logo-small" class="logo-sm">
+                    <img src="{{ asset('assets/logo/champions.png') }}" alt="logo-small" class="logo-sm">
                 </span>
                 <span class="">
-                    <img src="{{ asset('assets/admin//images/logo-light.png') }}" alt="logo-large"
+                    <img src="{{ asset('assets/logo/champions.png') }}" alt="logo-large" height="80px" width="80px"
                         class="logo-lg logo-light">
-                    <img src="{{ asset('assets/admin//images/logo-dark.png') }}" alt="logo-large"
+                    <img src="{{ asset('assets/logo/champions.png') }}" alt="logo-large" height="80px" width="80px"
                         class="logo-lg logo-dark">
                 </span>
             </a>
@@ -118,114 +118,21 @@
                             <span>Main Menu</span>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button"
-                                aria-expanded="false" aria-controls="sidebarDashboards">
+                            <a class="nav-link" href="{{ route('Admin.Dashboard') }}" role="button">
                                 <i class="iconoir-home-simple menu-icon"></i>
-                                <span>Dashboards</span>
+                                <span>Dashboard</span>
                             </a>
-                            <div class="collapse " id="sidebarDashboards">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.html">Analytics</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="ecommerce-index.html">Ecommerce</a>
-                                    </li><!--end nav-item-->
-                                </ul><!--end nav-->
-                            </div><!--end startbarDashboards-->
                         </li><!--end nav-item-->
                         <li class="nav-item">
                             <a class="nav-link" href="#sidebarApplications" data-bs-toggle="collapse" role="button"
                                 aria-expanded="false" aria-controls="sidebarApplications">
                                 <i class="iconoir-view-grid menu-icon"></i>
-                                <span>Applications</span>
+                                <span>Users</span>
                             </a>
                             <div class="collapse " id="sidebarApplications">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#sidebarAnalytics" data-bs-toggle="collapse"
-                                            role="button" aria-expanded="false" aria-controls="sidebarAnalytics">
-                                            <span>Analytics</span>
-                                        </a>
-                                        <div class="collapse " id="sidebarAnalytics">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a href="analytics-customers.html" class="nav-link ">Customers</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a href="analytics-reports.html" class="nav-link ">Reports</a>
-                                                </li><!--end nav-item-->
-                                            </ul><!--end nav-->
-                                        </div>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#sidebarProjects" data-bs-toggle="collapse"
-                                            role="button" aria-expanded="false" aria-controls="sidebarProjects">
-                                            <span>Projects</span>
-                                        </a>
-                                        <div class="collapse " id="sidebarProjects">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="projects-clients.html">Clients</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="projects-team.html">Team</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="projects-project.html">Project</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="projects-task.html">Task</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="projects-kanban-board.html">Kanban
-                                                        Board</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="projects-chat.html">Chat</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="projects-users.html">Users</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="projects-create.html">Project Create</a>
-                                                </li><!--end nav-item-->
-                                            </ul><!--end nav-->
-                                        </div>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#sidebarEcommerce" data-bs-toggle="collapse"
-                                            role="button" aria-expanded="false" aria-controls="sidebarEcommerce">
-                                            <span>Ecommerce</span>
-                                        </a>
-                                        <div class="collapse " id="sidebarEcommerce">
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="ecommerce-products.html">Products</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="ecommerce-customers.html">Customers</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link"
-                                                        href="ecommerce-customer-details.html">Customer Details</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="ecommerce-orders.html">Orders</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="ecommerce-order-details.html">Order
-                                                        Details</a>
-                                                </li><!--end nav-item-->
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="ecommerce-refunds.html">Refunds</a>
-                                                </li><!--end nav-item-->
-                                            </ul><!--end nav-->
-                                        </div>
-                                    </li><!--end nav-item-->
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="apps-chat.html">Chat</a>
+                                        <a class="nav-link" href="">Pending User</a>
                                     </li><!--end nav-item-->
                                     <li class="nav-item">
                                         <a class="nav-link" href="apps-contact-list.html">Contact List</a>
@@ -239,13 +146,13 @@
                                 </ul><!--end nav-->
                             </div><!--end startbarApplications-->
                         </li><!--end nav-item-->
-                        <li class="menu-label mt-2">
+                        {{-- <li class="menu-label mt-2">
                             <small class="label-border">
                                 <div class="border_left hidden-xs"></div>
                                 <div class="border_right"></div>
                             </small>
                             <span>Components</span>
-                        </li>
+                        </li> --}}
                         {{-- <li class="nav-item">
                             <a class="nav-link" href="#sidebarElements" data-bs-toggle="collapse" role="button"
                                 aria-expanded="false" aria-controls="sidebarElements">
@@ -574,17 +481,7 @@
                                 </ul><!--end nav-->
                             </div><!--end startbarAuthentication-->
                         </li> --}}
-                    </ul><!--end navbar-nav--->
-                    <div class="update-msg text-center">
-                        <div
-                            class="d-flex justify-content-center align-items-center thumb-lg update-icon-box  rounded-circle mx-auto">
-                            <i class="iconoir-peace-hand h3 align-self-center mb-0 text-primary"></i>
-                        </div>
-                        <h5 class="mt-3">Mannat Themes</h5>
-                        <p class="mb-3 text-muted">Champions is a high quality web applications.</p>
-                        <a href="javascript: void(0);" class="btn text-primary shadow-sm rounded-pill">Upgrade your
-                            plan</a>
-                    </div>
+                    </ul>
                 </div>
             </div><!--end startbar-collapse-->
         </div><!--end startbar-menu-->
