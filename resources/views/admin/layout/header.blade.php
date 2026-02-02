@@ -24,7 +24,7 @@
 <!-- Top Bar Start -->
 
 <body>
-    <!-- Top Bar Start -->
+    <x-alert />
     <div class="topbar d-print-none">
         <div class="container-xxl">
             <nav class="topbar-custom d-flex justify-content-between" id="topbar-custom">
@@ -127,19 +127,16 @@
                             <a class="nav-link" href="#sidebarApplications" data-bs-toggle="collapse" role="button"
                                 aria-expanded="false" aria-controls="sidebarApplications">
                                 <i class="iconoir-view-grid menu-icon"></i>
-                                <span>Users</span>
+                                <span>Teams</span>
                             </a>
                             <div class="collapse " id="sidebarApplications">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('Admin.Pending.Users') }}">Pending
-                                            User</a>
+                                            Teams</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Active Users</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Rejected Users</a>
+                                        <a class="nav-link" href="{{ route('Admin.approve.Team') }}">Approved Teams</a>
                                     </li>
                                 </ul>
                             </div><!--end startbarApplications-->

@@ -11,7 +11,7 @@
                             <div class="card-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h4 class="card-title">Pending Teams</h4>
+                                        <h4 class="card-title">Approved Teams</h4>
                                     </div>
                                 </div>
                             </div>
@@ -37,8 +37,8 @@
                                                     <td>{{ $user->status }}</td>
                                                     <td>{{ $user->created_at }}</td>
                                                     <td>
-                                                        <a href="{{ route('Admin.approve.User', $user->id) }}"
-                                                            class="btn btn-primary btn-sm">Approval</a>
+                                                        <a href="{{ route('Admin.Pending.Team', $user->id) }}"
+                                                            class="btn btn-primary btn-sm">Pending</a>
                                                     </td>
                                                 </tr>
                                             @endforeach
