@@ -10,4 +10,10 @@ class WelcomeController extends Controller
     {
         return view('event');
     }
+
+    public function matches()
+    {
+        return view('matches');
+    }
+
 }
