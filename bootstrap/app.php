@@ -2,6 +2,7 @@
 
 use App\Http\Middleware\admin;
 use App\Http\Middleware\status;
+use App\Http\Middleware\user;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -20,6 +21,7 @@ return Application::configure(basePath: dirname(__DIR__))
             [
                 'status' => status::class,
                 'admin' => admin::class,
+                'user' => user::class,
             ]
         );
     })
