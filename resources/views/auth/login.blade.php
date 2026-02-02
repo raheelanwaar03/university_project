@@ -16,7 +16,7 @@
                                 <input type="email" name="email" placeholder="email*" required>
                             </div>
                             <div class="form-group">
-                                <input type="password" placeholder="Password*" required>
+                                <input type="password" name="password" placeholder="Password*" required>
                             </div>
                             <div class="d-flex justify-content-between my-4">
                                 <div class="form-check">
