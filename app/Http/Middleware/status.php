@@ -18,7 +18,7 @@ class status
         if (auth()->user()->role == 'approved') {
             return $next($request);
         } else {
-            return redirect()->url('/')->with('error', 'please wait for Admin Approval');
+            return redirect()->url('/')->with('error', 'Please wait for Admin approval');
         }
     }
 }
