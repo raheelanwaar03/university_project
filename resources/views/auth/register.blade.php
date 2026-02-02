@@ -13,29 +13,17 @@
                         <form action="{{ route('register') }}" method="POST">
                             @csrf
                             <div class="form-group half-form">
-                                <input type="text" name="name" placeholder="Username*" required>
-                            </div>
-                            <div class="form-group half-form">
                                 <input type="email" name="email" placeholder="Email*" required>
                             </div>
                             <div class="form-group half-form">
-                                <input type="password" name="password" placeholder="Password*" required>
+                                <input type="text" name="name" placeholder="Team Name*" required>
                             </div>
                             <div class="form-group half-form">
                                 <input type="password" name="password_confirmation" placeholder="Confirm Password*"
                                     required>
                             </div>
-                            <div class="form-group">
-                                <select name="role" class="form-control" id="role">
-                                    <option value="user">User</option>
-                                    <option value="team">Team</option>
-                                </select>
-                            </div>
-                            <div class="form-check mt-4">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    I agreed to the Terms and Conditions governing the use of Fuzio Terms
-                                </label>
+                            <div class="form-group half-form">
+                                <input type="password" name="password" placeholder="Password*" required>
                             </div>
                             <button class="btn btn-primary w-100 mt-5">Register</button>
                         </form>

@@ -31,7 +31,6 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'role' => ['required', 'string'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
@@ -40,13 +39,13 @@ class RegisteredUserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => $request->role,
+            'role' => 'team',
         ]);
 
         event(new Registered($user));
 
         Auth::login($user);
 
-        return redirect(url('/'))->with('success','Please Wait For Admin Response Now!');
+        return redirect(url('/'))->with('success', 'Please Wait For Admin Response Now!');
     }
 }

@@ -7,11 +7,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="promo-txt">
-                        <h1 class="text-uppercase text-info mt-3 mb-5 text-center">League Page</h1>
+                        <h1 class="text-uppercase text-info mt-3 mb-5 text-center">Matches</h1>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                <li class="breadcrumb-item active" aria-current="page"> League</li>
+                                <li class="breadcrumb-item"><a href="{{ url('/') }}">Champions</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"> Match</li>
                             </ol>
                         </nav>
                     </div>
@@ -48,7 +48,7 @@
                             <table>
                                 <tr>
                                     <th>Pos</th>
-                                    <th>Club</th>
+                                    <th>Teams</th>
                                     <th>P</th>
                                     <th>W</th>
                                     <th>D</th>
@@ -139,85 +139,6 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-12 mt-5 mt-xl-0">
-                    <aside class="sidebar">
-                        <div class="widget recent-post">
-                            <h4 class="widget-title">Latest From Blog</h4>
-                            <div class="widget-inner p-3 rounded-2">
-                                <div class="rc-entry d-flex">
-                                    <div class="rc-thumb">
-                                        <a href="single-post.html"><img width="76" class="rounded-2"
-                                                src="{{ asset('assets/images/rc1.png') }}" alt=""></a>
-                                    </div>
-                                    <div class="rc-info ms-3">
-                                        <h5 class="mb-0"><a href="single-post.html">Fashion That Exists in Everything</a>
-                                        </h5>
-                                        <span class="text-xs"><i class="feather-icon icon-calendar me-2"></i>Feb 11,
-                                            2024</span>
-                                    </div>
-                                </div> <!-- Recent Post End -->
-                                <div class="rc-entry d-flex">
-                                    <div class="rc-thumb">
-                                        <a href="single-post.html"><img width="76" class="rounded-2"
-                                                src="{{ asset('assets/images/rc2.png') }}" alt=""></a>
-                                    </div>
-                                    <div class="rc-info ms-3">
-                                        <h5 class="mb-0"><a href="single-post.html">Fashion That Exists in Everything</a>
-                                        </h5>
-                                        <span class="text-xs"><i class="feather-icon icon-calendar me-2"></i>Feb 11,
-                                            2024</span>
-                                    </div>
-                                </div> <!-- Recent Post End -->
-                                <div class="rc-entry d-flex">
-                                    <div class="rc-thumb">
-                                        <a href="single-post.html"><img width="76" class="rounded-2"
-                                                src="{{ asset('assets/images/rc3.png') }}" alt=""></a>
-                                    </div>
-                                    <div class="rc-info ms-3">
-                                        <h5 class="mb-0"><a href="single-post.html">Fashion That Exists in Everything</a>
-                                        </h5>
-                                        <span class="text-xs"><i class="feather-icon icon-calendar me-2"></i>Feb 11,
-                                            2024</span>
-                                    </div>
-                                </div> <!-- Recent Post End -->
-                                <div class="rc-entry d-flex">
-                                    <div class="rc-thumb">
-                                        <a href="single-post.html"><img width="76" class="rounded-2"
-                                                src="{{ asset('assets/images/rc1.png') }}" alt=""></a>
-                                    </div>
-                                    <div class="rc-info ms-3">
-                                        <h5 class="mb-0"><a href="single-post.html">Fashion That Exists in Everything</a>
-                                        </h5>
-                                        <span class="text-xs"><i class="feather-icon icon-calendar me-2"></i>Feb 11,
-                                            2024</span>
-                                    </div>
-                                </div> <!-- Recent Post End -->
-                            </div>
-                        </div> <!-- Widget End -->
-
-                        <div class="widget instagrame-widget">
-                            <h3 class="widget-title">Instagram</h3>
-                            <div class="widget-inner pt-4 p-3 rounded-2 text-center">
-                                <a href="#"><img width="76" src="{{ asset('assets/images/ins1.png') }}"
-                                        alt="Instagram"></a>
-                                <a href="#"><img width="76" src="{{ asset('assets/images/ins2.png') }}"
-                                        alt="Instagram"></a>
-                                <a href="#"><img width="76" src="{{ asset('assets/images/ins3.png') }}"
-                                        alt="Instagram"></a>
-                                <a href="#"><img width="76" src="{{ asset('assets/images/ins4.png') }}"
-                                        alt="Instagram"></a>
-                                <a href="#"><img width="76" src="{{ asset('assets/images/ins5.png') }}"
-                                        alt="Instagram"></a>
-                                <a href="#"><img width="76" src="{{ asset('assets/images/ins6.png') }}"
-                                        alt="Instagram"></a>
-                                <a href="#"><img width="76" src="{{ asset('assets/images/ins7.png') }}"
-                                        alt="Instagram"></a>
-                                <a href="#"><img width="76" src="{{ asset('assets/images/ins8.png') }}"
-                                        alt="Instagram"></a>
-                                <a href="#"><img width="76" src="{{ asset('assets/images/ins9.png') }}"
-                                        alt="Instagram"></a>
-                            </div>
-                        </div><!-- Widget End -->
-                    </aside>
                 </div>
             </div>
         </div>
