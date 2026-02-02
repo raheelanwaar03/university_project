@@ -27,23 +27,89 @@
             <div class="row">
                 <div class="col-xl-9 col-md-12">
                     <div class="league-wrap">
-                        <h2 class="sub-title mb-3">PRIMARY LEAGUE 2022</h2>
-                        <p>Have you ever seen landscape images where the water looks soft, silky and smooth? Or perhaps an
-                            image showing light
-                            trails through a city scene? Then you’ve seen long exposure photography. It’s easy to create and
-                            doesn’t need heavy
-                            manipulation. In this article, we’ll show you how to do it yourself.
-                        </p>
-                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
-                            approaches to corporate
-                            strategy foster collaborative thinking to further the overall value proposition. Organically
-                            grow
-                            the holistic world
-                            view of disruptive innovation via workplace diversity and empowerment.</p>
-                        <div class="league-gallery justify-content-between my-5 row">
-                            <img class="img-fluid rounded-3" src="{{ asset('assets/images/league1.jpg') }}" alt="">
-                            <img class="img-fluid rounded-3" src="{{ asset('assets/images/league2.jpg') }}" alt="">
-                        </div>
+                        <section class="match-section sec-padding">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 mx-auto text-center">
+                                        <h2 class="sec-title line">Upcoming Matches</h2>
+                                        <p class="wow fadeInUp">Provide a comprehensive directory of golf courses, including
+                                            details such
+                                            as location,
+                                            course layout, facilities, and user reviews.</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-lg-12">
+                                        <div
+                                            class="single-match d-md-flex border rounded-4 justify-content-between align-items-center mb-4 wow fadeInUp">
+                                            <div class="match-info">
+                                                <p><i class="feather-icon icon-calendar me-2"></i>13 Sep, 2023</p>
+                                                <h3 class="text-uppercase">Donate to Elevate Impact</h3>
+                                                <p><i class="feather-icon icon-map-pin me-2"></i>Willowbrook Park -
+                                                    Greenwood</p>
+                                            </div>
+                                            <div class="team-logo d-flex justify-content-between align-items-center">
+                                                <a href="#"><img class="img-fluid"
+                                                        src="http://university_project.test/assets/images/team1.png"
+                                                        alt="" /></a>
+                                                <span class="versus">VS</span>
+                                                <a href="#"><img class="img-fluid"
+                                                        src="http://university_project.test/assets/images/team2.png"
+                                                        alt="" /></a>
+                                            </div>
+                                            <div class="match-ticket">
+                                                <a href="#" class="btn btn-dark">Get Ticket</a>
+                                            </div>
+                                        </div>
+                                        <!-- Single Match End -->
+                                        <div class="single-match d-md-flex border rounded-4 justify-content-between align-items-center mb-4 wow fadeInUp"
+                                            data-wow-delay=".2s">
+                                            <div class="match-info">
+                                                <p><i class="feather-icon icon-calendar me-2"></i>13 Sep, 2023</p>
+                                                <h3 class="text-uppercase">Donate to Elevate Impact</h3>
+                                                <p><i class="feather-icon icon-map-pin me-2"></i>Willowbrook Park -
+                                                    Greenwood</p>
+                                            </div>
+                                            <div class="team-logo d-flex justify-content-between align-items-center">
+                                                <a href="#"><img class="img-fluid"
+                                                        src="http://university_project.test/assets/images/team3.png"
+                                                        alt="" /></a>
+                                                <span class="versus">VS</span>
+                                                <a href="#"><img class="img-fluid"
+                                                        src="http://university_project.test/assets/images/team4.png"
+                                                        alt="" /></a>
+                                            </div>
+                                            <div class="match-ticket">
+                                                <a href="#" class="btn btn-dark">Get Ticket</a>
+                                            </div>
+                                        </div>
+                                        <!-- Single Match End -->
+                                        <div class="single-match d-md-flex border rounded-4 justify-content-between align-items-center wow fadeInUp"
+                                            data-wow-delay=".4s">
+                                            <div class="match-info">
+                                                <p><i class="feather-icon icon-calendar me-2"></i>13 Sep, 2023</p>
+                                                <h3 class="text-uppercase">Donate to Elevate Impact</h3>
+                                                <p><i class="feather-icon icon-map-pin me-2"></i>Willowbrook Park -
+                                                    Greenwood</p>
+                                            </div>
+                                            <div class="team-logo d-flex justify-content-between align-items-center">
+                                                <a href="#"><img class="img-fluid"
+                                                        src="http://university_project.test/assets/images/team5.png"
+                                                        alt="" /></a>
+                                                <span class="versus">VS</span>
+                                                <a href="#"><img class="img-fluid"
+                                                        src="http://university_project.test/assets/images/team6.png"
+                                                        alt="" /></a>
+                                            </div>
+                                            <div class="match-ticket">
+                                                <a href="#" class="btn btn-dark">Get Ticket</a>
+                                            </div>
+                                        </div>
+                                        <!-- Single Match End -->
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <div class="poins-table">
                             <table>
                                 <tr>
