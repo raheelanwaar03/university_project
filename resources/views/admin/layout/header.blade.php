@@ -12,7 +12,7 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ asset('assets/logo/champions.png') }}">
 
-
+    <link rel="stylesheet" href="{{ asset('asset/admin/libs/simple-datatables/style.css') }}">
     <!-- App css -->
     <link href="{{ asset('assets/admin//css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/admin//css/icons.min.css') }}" rel="stylesheet" type="text/css" />
@@ -132,7 +132,8 @@
                             <div class="collapse " id="sidebarApplications">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Pending User</a>
+                                        <a class="nav-link" href="{{ route('Admin.Pending.Users') }}">Pending
+                                            User</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Active Users</a>

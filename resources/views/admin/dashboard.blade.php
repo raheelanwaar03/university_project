@@ -1,16 +1,12 @@
 @extends('admin.layout.app')
 @section('content')
     <div class="page-wrapper">
-
-        <!-- Page Content-->
         <div class="page-content">
-            <!--Start Rightbar-->
-            <!--Start Rightbar/offcanvas-->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="Appearance" aria-labelledby="AppearanceLabel">
                 <div class="offcanvas-header border-bottom justify-content-between">
                     <h5 class="m-0 font-14" id="AppearanceLabel">Appearance</h5>
-                    <button type="button" class="btn-close text-reset p-0 m-0 align-self-center"
-                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close text-reset p-0 m-0 align-self-center" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <h6>Account Settings</h6>
@@ -45,10 +41,6 @@
                     </div><!--end /div-->
                 </div><!--end offcanvas-body-->
             </div>
-            <!--end Rightbar/offcanvas-->
-            <!--end Rightbar-->
-            <!--Start Footer-->
-
             <footer class="footer text-center text-sm-start d-print-none">
                 <div class="container-xxl">
                     <div class="row">
@@ -72,9 +64,6 @@
                     </div>
                 </div>
             </footer>
-
-            <!--end footer-->
         </div>
-        <!-- end page content -->
     </div>
 @endsection
