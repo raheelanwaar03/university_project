@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="promo-txt">
-                    <h1 class="text-uppercase text-info mt-3 mb-5 text-center">Team Players</h1>
+                    <h1 class="text-uppercase text-info mt-3 mb-5 text-center">Teams</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Pages</a></li>
