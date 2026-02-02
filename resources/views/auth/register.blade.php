@@ -22,7 +22,15 @@
                                 <input type="password" name="password" placeholder="Password*" required>
                             </div>
                             <div class="form-group half-form">
-                                <input type="password" name="password_confirmation" placeholder="Confirm Password*" required>
+                                <input type="password" name="password_confirmation" placeholder="Confirm Password*"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <select name="role"  class="form-control" id="role">
+                                    <option>Select Role</option>
+                                    <option value="User">User</option>
+                                    <option value="team">Team</option>
+                                </select>
                             </div>
                             <div class="form-check mt-4">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
