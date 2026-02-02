@@ -22,7 +22,7 @@
                                 <input type="password" name="password" placeholder="Password*" required>
                             </div>
                             <div class="form-group half-form">
-                                <input type="password" name="confirm_password" placeholder="Re-Enter Password*" required>
+                                <input type="password" name="confirmation_password" placeholder="Password*" required>
                             </div>
                             <div class="form-check mt-4">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">

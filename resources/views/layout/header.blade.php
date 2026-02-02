@@ -29,9 +29,13 @@
             <span></span>
         </div>
     </div>
+
+    {{-- component --}}
+
+    <x-alert />
+
     <!-- Header Start -->
     <header class="header header-football">
-        <!-- Header Top End -->
 
         <!-- Navigation Menu Start -->
         <div class="offcanvas offcanvas-top bg-info" id="offcanvas-search" data-bs-scroll="true">
