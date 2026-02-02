@@ -13,7 +13,7 @@
                         <form action="{{ route('register') }}" method="POST">
                             @csrf
                             <div class="form-group half-form">
-                                <input type="text" name="username" placeholder="Username*" required>
+                                <input type="text" name="name" placeholder="Username*" required>
                             </div>
                             <div class="form-group half-form">
                                 <input type="email" name="email" placeholder="Email*" required>
@@ -22,7 +22,7 @@
                                 <input type="password" name="password" placeholder="Password*" required>
                             </div>
                             <div class="form-group half-form">
-                                <input type="password" name="confirmation_password" placeholder="Password*" required>
+                                <input type="password" name="password_confirmation" placeholder="Confirm Password*" required>
                             </div>
                             <div class="form-check mt-4">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
