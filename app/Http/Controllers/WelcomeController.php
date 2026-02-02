@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
 {
+    public function welcome()
+    {
+        return view('welcome');
+    }
+
     public function event()
     {
         return view('event');
@@ -19,5 +24,10 @@ class WelcomeController extends Controller
     public function teams()
     {
         return view('team');
+    }
+
+    public function index()
+    {
+        return view('dashboard');
     }
 }
