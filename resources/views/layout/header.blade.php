@@ -50,8 +50,8 @@
                 </button>
                 <div class="offcanvas offcanvas-start offcanvas-nav">
                     <div class="offcanvas-header">
-                        <a href="{{ url('/') }}" class="text-inverse"><img src="{{ asset('assets/logo/champions.png') }}"
-                                alt="Logo" /></a>
+                        <a href="{{ url('/') }}" class="text-inverse"><img
+                                src="{{ asset('assets/logo/champions.png') }}" alt="Logo" /></a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -64,7 +64,7 @@
                             <li class="nav-item"><a href="{{ route('Matches') }}" class="nav-link">Matches</a></li>
                             <li class="nav-item"><a href="{{ route('Team') }}" class="nav-link">Team</a></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="{{ route('ContactUs') }}">Contact</a>
                             </li>
                         </ul>
                     </div>
