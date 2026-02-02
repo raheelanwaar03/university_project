@@ -10,6 +10,6 @@ Route::get('/Matches', [WelcomeController::class, 'matches'])->name('Matches');
 Route::get('/Teams', [WelcomeController::class, 'teams'])->name('Team');
 
 
-Route::name('User.')->prefix('User')->middleware('auth', 'user')->group(function () {
+Route::name('User.')->prefix('User')->middleware('auth', 'user','status')->group(function () {
     Route::get('/Dashboard', [WelcomeController::class, 'index'])->name('Dashboard');
 });

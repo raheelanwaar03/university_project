@@ -47,7 +47,7 @@ class clear extends Command
         $user->email = 'user@gmail.com';
         $user->password = Hash::make('asdfasdf');
         $user->status = 'active';
-        $user->role = 'User';
+        $user->role = 'user';
         $user->save();
     }
 }

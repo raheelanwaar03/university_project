@@ -13,14 +13,12 @@ class user
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, Closure $next)
     {
         if (auth()->user()->role == 'user') {
             return $next($request);
         } elseif (auth()->user()->role == 'admin') {
             return redirect()->route('Admin.Dashboard');
-        } else {
-            return redirect()->route('Teams.Dashboard');
         }
     }
 }
