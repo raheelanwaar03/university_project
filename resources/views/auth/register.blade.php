@@ -6,8 +6,8 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="text-center mb-5">
-                        <h2 class="sec-title line primary">Register Account</h2>
-                        <p>Please register first to access your account.</p>
+                        <h2 class="sec-title line primary">Register</h2>
+                        <p>Please register your team to participate.</p>
                     </div>
                     <div class="account-form bg-mute rounded-4">
                         <form action="{{ route('register') }}" method="POST">

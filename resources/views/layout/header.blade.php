@@ -48,14 +48,9 @@
                 <button class="navbar-toggler offcanvas-nav-btn" type="button">
                     <span class="feather-icon icon-menu"></span>
                 </button>
-                <div class="nav-cta order-lg-3">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <a href="{{ route('login') }}"><i class="feather-icon icon-user"></i></a>
-                    </div>
-                </div>
                 <div class="offcanvas offcanvas-start offcanvas-nav">
                     <div class="offcanvas-header">
-                        <a href="index.html" class="text-inverse"><img src="{{ asset('assets/logo/champions.png') }}"
+                        <a href="{{ url('/') }}" class="text-inverse"><img src="{{ asset('assets/logo/champions.png') }}"
                                 alt="Logo" /></a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
@@ -69,7 +64,7 @@
                             <li class="nav-item"><a href="{{ route('Matches') }}" class="nav-link">Matches</a></li>
                             <li class="nav-item"><a href="{{ route('Team') }}" class="nav-link">Team</a></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="#">Contact</a>
                             </li>
                         </ul>
                     </div>
