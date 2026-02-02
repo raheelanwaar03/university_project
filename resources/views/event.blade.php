@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-<section class="promo-sec position-relative jarallax" style="background-image: url('images/promo-sec.jpg');">
+<section class="promo-sec position-relative jarallax" style="background-image: url('{{ asset('assets/images/promo-sec.jpg') }}');">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
@@ -26,7 +26,7 @@
          <div class="row">
             <div class="col-lg-12">
                <div class="event-media">
-                  <img class="img-fluid" src="images/event-details.jpg" alt="">
+                  <img class="img-fluid" src="{{ asset('assets/images/event-details.jpg') }}" alt="">
                </div>
                <div class="row mt-5">
                   <div class="col-lg-8">
@@ -60,25 +60,25 @@
                            <div class="our-players d-sm-flex g-4 flex-wrap justify-content-between mt-5">
                               <div class="event-player text-center">
                                  <div class="player-media rounded-circle mb-4">
-                                    <img class="img-fluid" src="images/player1.png" alt="Player">
+                                    <img class="img-fluid" src="{{ asset('assets/images/player1.png') }}" alt="Player">
                                  </div>
                                  <h4><a href="single-player.html">John Thompson</a></h4>
                               </div>
                               <div class="event-player text-center">
                                  <div class="player-media rounded-circle mb-4">
-                                    <img class="img-fluid" src="images/player2.png" alt="Player">
+                                    <img class="img-fluid" src="{{ asset('assets/images/player2.png') }}" alt="Player">
                                  </div>
                                  <h4><a href="single-player.html">Joanna Rose</a></h4>
                               </div>
                               <div class="event-player text-center">
                                  <div class="player-media rounded-circle mb-4">
-                                    <img class="img-fluid" src="images/player3.png" alt="Player">
+                                    <img class="img-fluid" src="{{ asset('assets/images/player3.png') }}" alt="Player">
                                  </div>
                                  <h4><a href="single-player.html">Joseph Rao</a></h4>
                               </div>
                               <div class="event-player text-center">
                                  <div class="player-media rounded-circle mb-4">
-                                    <img class="img-fluid" src="images/player4.png" alt="Player">
+                                    <img class="img-fluid" src="{{ asset('assets/images/player4.png') }}" alt="Player">
                                  </div>
                                  <h4><a href="single-player.html">Rafael Thompson</a></h4>
                               </div>
@@ -94,7 +94,7 @@
                            <div class="widget-inner p-4 rounded-2">
                               <div class="event-item d-flex">
                                  <span class="icon-sm rounded-3 bg-primary flex-shrink-0">
-                                    <img src="images/icons/smartwatch.png" alt="">
+                                    <img src="{{ asset('assets/images/icons/smartwatch.png') }}" alt="">
                                  </span>
                                  <div class="ms-3">
                                     <h4 class="text-uppercase">Start & End Time</h4>
@@ -104,7 +104,7 @@
 
                               <div class="event-item d-flex">
                                  <span class="icon-sm rounded-3 bg-primary flex-shrink-0">
-                                    <img src="images/icons/jersey.png" alt="">
+                                    <img src="{{ asset('assets/images/icons/jersey.png') }}" alt="">
                                  </span>
                                  <div class="ms-3">
                                     <h4 class="text-uppercase">Match Name</h4>
@@ -113,7 +113,7 @@
                               </div> <!-- Item End -->
                               <div class="event-item d-flex align-items-top">
                                  <span class="icon-sm rounded-3 bg-primary flex-shrink-0">
-                                    <img src="images/icons/map.png" alt="">
+                                    <img src="{{ asset('assets/images/icons/map.png') }}" alt="">
                                  </span>
                                  <div class="ms-3">
                                     <h4 class="text-uppercase">Locations</h4>
