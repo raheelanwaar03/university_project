@@ -23,6 +23,7 @@
                                                 <th>Name</th>
                                                 <th>Email</th>
                                                 <th>Role</th>
+                                                <th>status</th>
                                                 <th>Date</th>
                                                 <th class="text-end">Action</th>
                                             </tr>
@@ -33,6 +34,7 @@
                                                     <td>{{ $user->name }}</td>
                                                     <td>{{ $user->email }}</td>
                                                     <td>{{ $user->role }}</td>
+                                                    <td>{{ $user->status }}</td>
                                                     <td>{{ $user->created_at }}</td>
                                                     <td>
                                                         <a href="#" class="btn btn-primary btn-sm">Active</a>

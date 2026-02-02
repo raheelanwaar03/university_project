@@ -26,9 +26,8 @@
                                     required>
                             </div>
                             <div class="form-group">
-                                <select name="role"  class="form-control" id="role">
-                                    <option>Select Role</option>
-                                    <option value="User">User</option>
+                                <select name="role" class="form-control" id="role">
+                                    <option value="user">User</option>
                                     <option value="team">Team</option>
                                 </select>
                             </div>
