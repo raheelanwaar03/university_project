@@ -58,7 +58,7 @@
                     <div class="offcanvas-body pt-0 align-items-center">
                         <ul class="navbar-nav mx-auto align-items-lg-center">
                             <li class="nav-item dropdown">
-                                <a href="#" role="button">Home</a>
+                                <a href="{{ url('/') }}" role="button">Home</a>
                             </li>
                             <li class="nav-item"><a href="{{ route('Event') }}" class="nav-link">Events</a></li>
                             <li class="nav-item"><a href="{{ route('Matches') }}" class="nav-link">Matches</a></li>
