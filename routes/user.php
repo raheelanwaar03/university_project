@@ -8,6 +8,7 @@ Route::get('/', [WelcomeController::class, 'welcome'])->name('Welcome');
 Route::get('/Event', [WelcomeController::class, 'event'])->name('Event');
 Route::get('/Matches', [WelcomeController::class, 'matches'])->name('Matches');
 Route::get('/Teams', [WelcomeController::class, 'teams'])->name('Team');
+Route::get('/Contact-Us', [WelcomeController::class, 'contactUs'])->name('ContactUs');
 
 
 Route::name('User.')->prefix('User')->middleware('auth', 'user','status')->group(function () {

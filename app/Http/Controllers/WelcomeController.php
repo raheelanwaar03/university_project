@@ -32,4 +32,9 @@ class WelcomeController extends Controller
     {
         return view('dashboard');
     }
+
+    public function contactUs()
+    {
+        return view('contactUs');
+    }
 }
