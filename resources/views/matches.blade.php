@@ -1,7 +1,8 @@
 @extends('layout.app')
 
 @section('content')
-    <section class="promo-sec position-relative jarallax" style="background-image: url('images/promo-sec.jpg');">
+    <section class="promo-sec position-relative jarallax"
+        style="background-image: url('{{ asset('assets/images/promo-sec.jpg') }}');">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -40,8 +41,8 @@
                             the holistic world
                             view of disruptive innovation via workplace diversity and empowerment.</p>
                         <div class="league-gallery justify-content-between my-5 row">
-                            <img class="img-fluid rounded-3" src="images/league1.jpg" alt="">
-                            <img class="img-fluid rounded-3" src="images/league2.jpg" alt="">
+                            <img class="img-fluid rounded-3" src="{{ asset('assets/images/league1.jpg') }}" alt="">
+                            <img class="img-fluid rounded-3" src="{{ asset('assets/images/league2.jpg') }}" alt="">
                         </div>
                         <div class="poins-table">
                             <table>
@@ -59,7 +60,8 @@
                                 </tr>
                                 <tr>
                                     <td>1</td>
-                                    <td><img src="images/viper.html" alt=""> Vipers Athletics</td>
+                                    <td><img src="{{ asset('assets/images/viper.html') }}" alt=""> Vipers Athletics
+                                    </td>
                                     <td>2</td>
                                     <td>2</td>
                                     <td>0</td>
@@ -71,7 +73,7 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td><img src="images/elite.png" alt=""> Elite Runners</td>
+                                    <td><img src="{{ asset('assets/images/elite.png') }}" alt=""> Elite Runners</td>
                                     <td>2</td>
                                     <td>2</td>
                                     <td>0</td>
@@ -83,7 +85,8 @@
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td><img src="images/kicker.png" alt=""> Dynamic Kickers</td>
+                                    <td><img src="{{ asset('assets/images/kicker.png') }}" alt=""> Dynamic Kickers
+                                    </td>
                                     <td>2</td>
                                     <td>2</td>
                                     <td>0</td>
@@ -95,7 +98,8 @@
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td><img src="images/raging.png" alt=""> Raging Rapids</td>
+                                    <td><img src="{{ asset('assets/images/raging.png') }}" alt=""> Raging Rapids
+                                    </td>
                                     <td>2</td>
                                     <td>2</td>
                                     <td>0</td>
@@ -107,7 +111,8 @@
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td><img src="images/swift.png" alt=""> Swift Swimmers</td>
+                                    <td><img src="{{ asset('assets/images/swift.png') }}" alt=""> Swift Swimmers
+                                    </td>
                                     <td>2</td>
                                     <td>2</td>
                                     <td>0</td>
@@ -119,7 +124,7 @@
                                 </tr>
                                 <tr>
                                     <td>6</td>
-                                    <td><img src="images/sky.png" alt="">Sky Highers</td>
+                                    <td><img src="{{ asset('assets/images/sky.png') }}" alt="">Sky Highers</td>
                                     <td>2</td>
                                     <td>2</td>
                                     <td>0</td>
@@ -141,7 +146,7 @@
                                 <div class="rc-entry d-flex">
                                     <div class="rc-thumb">
                                         <a href="single-post.html"><img width="76" class="rounded-2"
-                                                src="images/rc1.png" alt=""></a>
+                                                src="{{ asset('assets/images/rc1.png') }}" alt=""></a>
                                     </div>
                                     <div class="rc-info ms-3">
                                         <h5 class="mb-0"><a href="single-post.html">Fashion That Exists in Everything</a>
@@ -153,7 +158,7 @@
                                 <div class="rc-entry d-flex">
                                     <div class="rc-thumb">
                                         <a href="single-post.html"><img width="76" class="rounded-2"
-                                                src="images/rc2.png" alt=""></a>
+                                                src="{{ asset('assets/images/rc2.png') }}" alt=""></a>
                                     </div>
                                     <div class="rc-info ms-3">
                                         <h5 class="mb-0"><a href="single-post.html">Fashion That Exists in Everything</a>
@@ -165,7 +170,7 @@
                                 <div class="rc-entry d-flex">
                                     <div class="rc-thumb">
                                         <a href="single-post.html"><img width="76" class="rounded-2"
-                                                src="images/rc3.png" alt=""></a>
+                                                src="{{ asset('assets/images/rc3.png') }}" alt=""></a>
                                     </div>
                                     <div class="rc-info ms-3">
                                         <h5 class="mb-0"><a href="single-post.html">Fashion That Exists in Everything</a>
@@ -177,7 +182,7 @@
                                 <div class="rc-entry d-flex">
                                     <div class="rc-thumb">
                                         <a href="single-post.html"><img width="76" class="rounded-2"
-                                                src="images/rc1.png" alt=""></a>
+                                                src="{{ asset('assets/images/rc1.png') }}" alt=""></a>
                                     </div>
                                     <div class="rc-info ms-3">
                                         <h5 class="mb-0"><a href="single-post.html">Fashion That Exists in Everything</a>
@@ -192,15 +197,24 @@
                         <div class="widget instagrame-widget">
                             <h3 class="widget-title">Instagram</h3>
                             <div class="widget-inner pt-4 p-3 rounded-2 text-center">
-                                <a href="#"><img width="76" src="images/ins1.png" alt="Instagram"></a>
-                                <a href="#"><img width="76" src="images/ins2.png" alt="Instagram"></a>
-                                <a href="#"><img width="76" src="images/ins3.png" alt="Instagram"></a>
-                                <a href="#"><img width="76" src="images/ins4.png" alt="Instagram"></a>
-                                <a href="#"><img width="76" src="images/ins5.png" alt="Instagram"></a>
-                                <a href="#"><img width="76" src="images/ins6.png" alt="Instagram"></a>
-                                <a href="#"><img width="76" src="images/ins7.png" alt="Instagram"></a>
-                                <a href="#"><img width="76" src="images/ins8.png" alt="Instagram"></a>
-                                <a href="#"><img width="76" src="images/ins9.png" alt="Instagram"></a>
+                                <a href="#"><img width="76" src="{{ asset('assets/images/ins1.png') }}"
+                                        alt="Instagram"></a>
+                                <a href="#"><img width="76" src="{{ asset('assets/images/ins2.png') }}"
+                                        alt="Instagram"></a>
+                                <a href="#"><img width="76" src="{{ asset('assets/images/ins3.png') }}"
+                                        alt="Instagram"></a>
+                                <a href="#"><img width="76" src="{{ asset('assets/images/ins4.png') }}"
+                                        alt="Instagram"></a>
+                                <a href="#"><img width="76" src="{{ asset('assets/images/ins5.png') }}"
+                                        alt="Instagram"></a>
+                                <a href="#"><img width="76" src="{{ asset('assets/images/ins6.png') }}"
+                                        alt="Instagram"></a>
+                                <a href="#"><img width="76" src="{{ asset('assets/images/ins7.png') }}"
+                                        alt="Instagram"></a>
+                                <a href="#"><img width="76" src="{{ asset('assets/images/ins8.png') }}"
+                                        alt="Instagram"></a>
+                                <a href="#"><img width="76" src="{{ asset('assets/images/ins9.png') }}"
+                                        alt="Instagram"></a>
                             </div>
                         </div><!-- Widget End -->
                     </aside>
