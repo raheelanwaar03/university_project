@@ -16,4 +16,8 @@ class WelcomeController extends Controller
         return view('matches');
     }
 
+    public function teams()
+    {
+        return view('team');
+    }
 }
