@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
@@ -23,7 +24,8 @@ class WelcomeController extends Controller
 
     public function teams()
     {
-        return view('team');
+        $teams = User::where('status', 'approved')->get();
+        return view('team', compact('teams'));
     }
 
     public function index()
