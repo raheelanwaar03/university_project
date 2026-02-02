@@ -132,18 +132,15 @@
                             <div class="collapse " id="sidebarApplications">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="">Pending User</a>
-                                    </li><!--end nav-item-->
+                                        <a class="nav-link" href="#">Pending User</a>
+                                    </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="apps-contact-list.html">Contact List</a>
-                                    </li><!--end nav-item-->
+                                        <a class="nav-link" href="#">Active Users</a>
+                                    </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="apps-calendar.html">Calendar</a>
-                                    </li><!--end nav-item-->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="apps-invoice.html">Invoice</a>
-                                    </li><!--end nav-item-->
-                                </ul><!--end nav-->
+                                        <a class="nav-link" href="#">Rejected Users</a>
+                                    </li>
+                                </ul>
                             </div><!--end startbarApplications-->
                         </li><!--end nav-item-->
                         {{-- <li class="menu-label mt-2">
