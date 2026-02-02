@@ -7,4 +7,5 @@ use Illuminate\Support\Facades\Route;
 Route::name('Admin.')->prefix('Admin')->middleware('auth', 'admin')->group(function () {
     Route::get('/Dashboard', [AdminDashboardController::class, 'index'])->name('Dashboard');
     Route::get('Pending/Users', [AdminDashboardController::class, 'pending'])->name('Pending.Users');
+    Route::get('Approve/User/{id}', [AdminDashboardController::class, 'approve'])->name('approve.User');
 });

@@ -37,7 +37,8 @@
                                                     <td>{{ $user->status }}</td>
                                                     <td>{{ $user->created_at }}</td>
                                                     <td>
-                                                        <a href="#" class="btn btn-primary btn-sm">Active</a>
+                                                        <a href="{{ route('Admin.approve.User', $user->id) }}"
+                                                            class="btn btn-primary btn-sm">Approval</a>
                                                     </td>
                                                 </tr>
                                             @endforeach

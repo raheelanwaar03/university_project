@@ -18,4 +18,12 @@ class AdminDashboardController extends Controller
         $users = User::where('status', 'pending')->get();
         return view('admin.users.pending', compact('users'));
     }
+
+    public function approve($id)
+    {
+        $user = User::where('id', $id)->first();
+        $user->status = 'approved';
+        $user->save();
+        return redirect()->back()->with('success', 'Team has been approved');
+    }
 }
